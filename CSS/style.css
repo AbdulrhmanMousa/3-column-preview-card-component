@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --bright-orange: hsl(31, 77%, 52%); 
+    --dark-cyan: hsl(184, 100%, 22%); 
+    --very-dark-cyan: hsl(179, 100%, 13%);
+
+    /* Neutral */
+    /* (paragraphs): */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (background, headings, buttons): */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 720px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+    padding: 40px;
+}
+
+.col img {
+    margin-bottom: 20px;
+}
+.col h1 {
+    margin-bottom: 20px;
+    color: var(--transparent-white);
+}
+.col p {
+    margin-bottom: 90px;
+    color: var(--transparent-white);
+}
+.col button {
+    width: 80%;
+    height: 45px;
+    font-weight: 700;
+    border: 2px solid var(--transparent-white);
+    border-radius: 25px;
+    background-color: white;
+    transition: background-color 0.5s;
+}
+
+.col button:hover {
+    background-color: hsla(0, 0%, 95%, 0);
+    color: var(--transparent-white);
+}
+
+.col-1 {
+    background-color: var(--bright-orange);
+    border-radius: 5px 0px 0px 5px;
+}
+.col-1 button {
+    color: var(--bright-orange);
+}
+.col-2 {
+    background-color: var(--dark-cyan);
+}
+.col-2 button {
+    color: var(--dark-cyan);
+}
+.col-3 {
+    background-color: var(--very-dark-cyan);
+    border-radius: 0px 5px 5px 0;
+}
+.col-3 button {
+    color: var(--very-dark-cyan);
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        width: 500px;
+    }
+    .col {
+        padding: 20px;
+    }
+    .col img {
+        margin-bottom: 10px;
+    }
+    .col h1 {
+        margin-bottom: 10px;
+    }
+    .col p {
+        margin-bottom: 45px;
+    }
+    .col button {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 548px) { 
+    main {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .col {
+        padding: 40px;
+    }
+    .col button {
+        width: 60%;
+    }
+    .col-1 {
+        border-radius: 5px 5px 0 0;
+    }
+    .col-3 {
+        border-radius: 0px 0px 5px 5px;
+    }
+}
