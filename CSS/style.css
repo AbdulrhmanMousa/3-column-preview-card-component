@@ -41,7 +41,9 @@ body {
 }
 
 main {
-    width: 720px;
+    width: 960px;
+    margin-left: 30px;
+    margin-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -102,19 +104,19 @@ main {
 
 @media screen and (max-width: 768px) {
     main {
-        width: 500px;
+        width: 600px;
     }
     .col {
         padding: 20px;
     }
     .col img {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .col h1 {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
     }
     .col p {
-        margin-bottom: 45px;
+        margin-bottom: 60px;
     }
     .col button {
         width: 80%;
